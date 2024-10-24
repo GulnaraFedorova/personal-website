@@ -1,12 +1,13 @@
 html[data-theme='light'] {
-  --main-background: rgb(255, 255, 255);
+  --main-background: rgb(235, 240, 252);
   --main-text-color: black;
   --main-text-highlight: black;
-  --bottom-background: rgba(45, 212, 191, 0.2);
-  --accent-color: #1d8577;
+  --bottom-background: rgba(45, 212, 191, 0.4);
+  --accent-color: #0d8f7e;
   --close-button-color: #151618;
+  --social-button-color:rgba(45, 212, 191, 0.4);
   --invert: none;
-  --shadow: drop-shadow(0px 0px 35px rgba(45, 212, 190, 0.9));
+  --shadow: drop-shadow(0px 0px 20px #0d8f7e);
 
 }
 
@@ -17,8 +18,9 @@ html[data-theme='dark'] {
   --bottom-background: rgba(45, 212, 191, 0.2);
   --accent-color: #2dd4bf;
   --close-button-color: #eeebff;
+  --social-button-color: #eeebff;
   --invert: invert();
-  --shadow: drop-shadow(0px 0px 35px rgba(45, 212, 190, 0.9));
+  --shadow: drop-shadow(0px 0px 20px #2dd4bf);
 }
 
 html {
@@ -122,7 +124,6 @@ li {
   border-radius: 55px;
   background-color: var(--bottom-background);
   overflow: hidden;
-  border: 1px solid var(--accent-color);
 }
 
 .theme {
@@ -217,7 +218,7 @@ header a:hover {
   position: absolute;
   height: 300px;
   width: 30px;
-  background: #ffffff10;
+  background: #ffffff41;
   filter: blur(2px);
   transition: 1.5s;
   transform: rotate(-20deg) translateX(-50px) translateY(-200px);
@@ -258,7 +259,7 @@ header a:hover {
 }
 
 .icon:hover {
-  filter: drop-shadow(0px 0px 35px #2dd4bf);
+  filter: var(--shadow);
 }
 
 
@@ -325,7 +326,7 @@ header a:hover {
 }
 
 .portfolio-item:hover {
-  box-shadow: 1px 1px 2px 0.2px var(--accent-color);
+  box-shadow: 0px 0px 0px 0.5px var(--accent-color);
 }
 
 .portfolio-item:hover > .portfolio-top {
