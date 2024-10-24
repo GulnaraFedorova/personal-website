@@ -5,7 +5,7 @@ html[data-theme='light'] {
   --bottom-background: rgba(45, 212, 191, 0.4);
   --accent-color: #0d8f7e;
   --close-button-color: #151618;
-  --social-button-color:rgba(45, 212, 191, 0.4);
+  --social-button-color: rgba(45, 212, 191, 0.4);
   --invert: none;
   --shadow: drop-shadow(0px 0px 20px #0d8f7e);
 
@@ -53,9 +53,9 @@ body {
 
 .container {
   display: flex;
-  padding: 0 10px;
+  padding: 0 30px;
   justify-content: space-between;
-  max-width: 1280px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -101,7 +101,7 @@ p {
   margin: 0;
 }
 
-ul, 
+ul,
 li {
   list-style: none;
   padding: 0;
@@ -111,8 +111,8 @@ li {
 /*  ---- THEME ----  */
 
 .theme-switch {
-  padding: 20px 10px 0;
-  max-width: 1280px;
+  padding: 20px 30px 0;
+  max-width: 1240px;
   margin: 0 auto;
   display: flex;
   justify-content: end;
@@ -151,7 +151,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 36%;
+  max-width: 620px;
   position: fixed;
   top: 96px;
   bottom: 96px;
@@ -195,7 +195,7 @@ header a:hover {
   height: 30px;
   max-width: 300px;
   border-radius: 55px;
-  background:  var(--bottom-background);
+  background: var(--bottom-background);
   border: none;
   transition: 0.5s ease-in-out;
   overflow: hidden;
@@ -228,6 +228,11 @@ header a:hover {
   transform: rotate(-20deg) translateX(200px);
 }
 
+.header-icon {
+  display: flex;
+  gap: 10px
+}
+
 .icon {
   height: 30px;
   cursor: pointer;
@@ -241,7 +246,7 @@ header a:hover {
 
 .icon.telegram:hover {
   content: url(/public/icons/telegrcolor.svg);
-  
+
 }
 
 .icon.instagram {
@@ -329,7 +334,7 @@ header a:hover {
   box-shadow: 0px 0px 0px 0.5px var(--accent-color);
 }
 
-.portfolio-item:hover > .portfolio-top {
+.portfolio-item:hover>.portfolio-top {
   color: var(--accent-color);
 }
 
@@ -361,7 +366,7 @@ header a:hover {
   scale: 0.9;
 }
 
-.portfolio-steak{
+.portfolio-steak {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -374,7 +379,7 @@ header a:hover {
   height: 30px;
   padding: 0 16px;
   border-radius: 55px;
-  background:  var(--bottom-background);
+  background: var(--bottom-background);
   border: none;
   color: var(--accent-color);
   font-size: 14px;
@@ -431,10 +436,164 @@ header a:hover {
   margin: 0;
 }
 
-.footer-up:hover > .footer-beamtext {
+.footer-up:hover>.footer-beamtext {
   color: var(--main-text-highlight);
 }
 
 .footer-text {
   font-size: 14px;
+}
+
+@media (max-width: 1050px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .portfolio-steaklist {
+    font-size: 12px;
+  }
+
+  .footer-beamtext {
+    font-size: 10px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 830px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  a {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .header-menu {
+    margin: 50px 0;
+  }
+
+  .btn {
+    padding: 0 10px;
+  }
+
+  .portfolio-item {
+    gap: 10px;
+  }
+
+  .portfolio-steaklist {
+    font-size: 10px;
+    padding: 0 10px;
+  }
+
+  .footer-beamtext {
+    font-size: 10px;
+  }
+
+  .footer-text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .navigation {
+    padding-top: 20px;
+    padding-left: 20px;
+    max-width: 620px;
+    position:static;
+  }
+
+  .header-buttons {
+    justify-content: space-between;
+  }
+
+  .icon {
+    height: 24px;
+  }
+  
+  .main {
+    padding: 0 0 10px 0;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .portfolio-block h3 {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .navigation {
+    padding-left: 0;
+  }
+
+  h2 {
+    margin: 10px 0;
+  }
+
+  .header-resume {
+    padding: 0;
+    flex-wrap: wrap;    
+  }
+
+  .header-menu {
+    margin: 20px 0;
+    gap: 10px;
+  }
+
+  .about-block {
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  .steak-block {
+    padding: 0;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
 }

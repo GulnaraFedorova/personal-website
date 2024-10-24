@@ -90,10 +90,12 @@ const Main = () => {
 
             <div className="header-buttons">
               <button onClick={handelOpenModal} className="btn"><p>Контакты</p></button>
-
-              <a href="https://github.com/GulnaraFedorova" target="_blank" className="icon github"></a>
-              <a href="https://t.me/gkhurmatova" target="_blank" className="icon telegram"></a>
-              <a href="https://www.instagram.com/khurmatova/" target="_blank" className="icon instagram"></a>
+              
+              <div className="header-icon">
+                <a href="https://github.com/GulnaraFedorova" target="_blank" className="icon github"></a>
+                <a href="https://t.me/gkhurmatova" target="_blank" className="icon telegram"></a>
+                <a href="https://www.instagram.com/khurmatova/" target="_blank" className="icon instagram"></a>
+              </div>
             </div>
           </div>
         </header>
@@ -104,7 +106,7 @@ const Main = () => {
               Меня увлекает frontend-разработка, потому что я люблю создавать интерфейсы, которые продуманы до мелочей и удобны для пользователей. Вдохновение пришло, когда я сделала электронные пригласительные для своей свадьбы через Тильду, где продумала опросы, информацию для гостей и интерфейс. Это погрузило меня в процесс создания логики сайта и визуальной части, но я столкнулась с ограничениями платформы, что подтолкнуло меня изучить веб-разработку глубже.
             </p>
             <p>
-            Так я прошла <a href="/GF_Диплом_«Веб-разработчик».pdf" target="_blank"><span className="accent">курс «Веб-разработчик»</span></a> в Яндекс Практикуме и продолжаю совершенствоваться.
+              Так я прошла <a href="/GF_Диплом_«Веб-разработчик».pdf" target="_blank"><span className="accent">курс «Веб-разработчик»</span></a> в Яндекс Практикуме и продолжаю совершенствоваться.
             </p>
           </div>
 
@@ -121,12 +123,12 @@ const Main = () => {
             <h3>Портфолио</h3>
             <ul className="portfolio-list">
               <li>
-                <a href="https://github.com/GulnaraFedorova/Personal-website" target="_blank" className="portfolio-item">
+                <a href="https://personal-website-six-iota-95.vercel.app" target="_blank" className="portfolio-item">
                   <div className="portfolio-top">
                     <h4>Personal website</h4>
                     <div>
-                      <a href="#" target="_blank" className="portfolio-icon portfolio-github"></a>
-                      <a href="#" target="_blank" className="portfolio-icon portfolio-link"></a>
+                      <a href="https://github.com/GulnaraFedorova/Personal-website" target="_blank" className="portfolio-icon portfolio-github"></a>
+                      <a href="https://personal-website-six-iota-95.vercel.app" target="_blank" className="portfolio-icon portfolio-link"></a>
                     </div>
                   </div>
                   <p>
