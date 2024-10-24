@@ -1,0 +1,129 @@
+
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 1000;
+}
+
+.modal-backdrop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    position: relative;
+    background: var(--main-background);
+    padding: 40px;
+    border-radius: 16px;
+    width: 500px;
+    transform: translateY(-50px);
+    transition: transform 0.5s ease;
+    z-index: 1001;
+}
+
+.modal-backdrop.show .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0;
+    outline: none;
+}
+
+.modal-close-button::before,
+.modal-close-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: var(--close-button-color);
+}
+
+.modal-close-button::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-close-button::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal-social {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 55px;
+    background: #eeebff;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-button p{
+    color: #151618;
+}
+
+.social {
+    cursor: pointer;
+}
+
+.social.telegram {
+    content: url(/public/icons/telegram_contact.svg);
+    scale: 0.6;
+    height: 50px;
+}
+
+.social.telegram:hover {
+    scale: 0.65;
+}
+
+.social.mail {
+    content: url(/public/icons/mail.svg);
+    scale: 0.6;
+    height: 50px;
+}
+
+.social.mail:hover {
+    scale: 0.65;
+}
+
+.social.phone {
+    content: url(/public/icons/phone.svg);
+    scale: 0.6;
+    height: 50px;
+}
+
+.social.phone:hover {
+    scale: 0.65;
+}
+
+.social-button:hover {
+    filter: drop-shadow(0px 0px 15px rgba(45, 212, 190, 0.5));
+}
