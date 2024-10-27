@@ -45,7 +45,7 @@ const Main = () => {
     window.scrollTo({ top: height, left: 0, behavior: 'smooth' })
   };
 
-  const PDF_FILE_URL = 'http://localhost:3000/GulnaraFedorova.pdf'
+  const PDF_FILE_URL = 'http://https:/gulnarafedorova.vercel.app/GulnaraFedorova.pdf'
   const downloadFileAtURL = (url) => {
     fetch(url)
       .then((response) => response.blob())
@@ -66,7 +66,7 @@ const Main = () => {
       <div className="theme-switch">
         <div className="switch" onClick={toggleTheme}>
           <div className={theme === 'dark' ? "theme dark" : "theme light"}
-            style={{ transform: isLightTheme ? 'translate(0px)' : 'translateX(38px)' }}></div>
+            style={{ transform: isLightTheme ? 'translateX(38px)' : 'translate(0px)' }}></div>
         </div>
       </div>
       <div className="container">

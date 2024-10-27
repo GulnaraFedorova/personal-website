@@ -247,7 +247,7 @@ header a:hover {
 
 .header-icon {
   display: flex;
-  gap: 10px
+  gap: 15px
 }
 
 .icon {
@@ -602,6 +602,6 @@ header a:hover {
 
   .steak-block {
     padding: 0;
-    margin: 0 0 20px 0;
+    margin: 20px 0 20px 0;
   }
 }
