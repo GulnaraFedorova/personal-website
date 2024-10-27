@@ -65,7 +65,7 @@ const Main = () => {
     <div>
       <div className="theme-switch">
         <div className="switch" onClick={toggleTheme}>
-          <div className={theme === 'light' ? "theme light" : "theme dark"}
+          <div className={theme === 'dark' ? "theme dark" : "theme light"}
             style={{ transform: isDarkTheme ? 'translateX(38px)' : 'translate(0px)' }}></div>
         </div>
       </div>

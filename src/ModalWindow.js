@@ -40,8 +40,8 @@ const ModalWindow = ({ show, onClose, children }) => {
                         <p>@khurmatova</p>
                     </div>
                     <div className="social-button">
-                        <a href="mailto:gkhurmatova@gmail.com" target="_blank" className="social mail"></a>
-                        <p>gkhurmatova@gmail.com</p>
+                        <a href="mailto:gul-khurmatova@yandex.ru" target="_blank" className="social mail"></a>
+                        <p>gul-khurmatova@yandex.ru</p>
                     </div>
                     <div className="social-button">
                         <a href="tel:+79267245857"  target="_blank" className="social phone"></a>

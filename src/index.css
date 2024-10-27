@@ -1,13 +1,13 @@
 html[data-theme='light'] {
-  --main-background: rgb(235, 240, 252);
-  --main-text-color: black;
-  --main-text-highlight: black;
-  --bottom-background: rgba(45, 212, 191, 0.4);
-  --accent-color: #0d8f7e;
-  --close-button-color: #151618;
-  --social-button-color: rgba(45, 212, 191, 0.4);
+  --main-background: #FEFFFF;
+  --main-text-color: #17252A;
+  --main-text-highlight: #17252A;
+  --bottom-background: #DEF2F1;
+  --accent-color: #009c94;
+  --close-button-color: #17252A;
+  --social-button-color: #DEF2F1;
   --invert: none;
-  --shadow: drop-shadow(0px 0px 20px #0d8f7e);
+  --shadow: drop-shadow(0px 0px 15px #00fff24e);
 
 }
 
@@ -20,7 +20,7 @@ html[data-theme='dark'] {
   --close-button-color: #eeebff;
   --social-button-color: #eeebff;
   --invert: invert();
-  --shadow: drop-shadow(0px 0px 20px #2dd4bf);
+  --shadow: drop-shadow(0px 0px 15px #2dd4bf);
 }
 
 html {
@@ -40,15 +40,18 @@ body {
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: normal;
   position: relative;
   background: var(--main-background);
   color: var(--main-text-color);
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
 }
 
 .container {
@@ -85,7 +88,7 @@ h4 {
 }
 
 a {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.7;
@@ -491,22 +494,6 @@ header a:hover {
     font-size: 20px;
   }
 
-  h3 {
-    font-size: 16px;
-  }
-
-  h4 {
-    font-size: 12px;
-  }
-
-  a {
-    font-size: 12px;
-  }
-
-  p {
-    font-size: 12px;
-  }
-
   .header-menu {
     margin: 50px 0;
   }
@@ -520,29 +507,29 @@ header a:hover {
   }
 
   .portfolio-steaklist {
-    font-size: 10px;
     padding: 0 10px;
-  }
-
-  .footer-beamtext {
-    font-size: 10px;
-  }
-
-  .footer-text {
-    font-size: 10px;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 680px) {
+  .theme-switch {
+    padding: 20px 10px 0;
+  }
+
   .container {
     flex-direction: column;
+    padding: 0 10px;
   }
 
   .navigation {
     padding-top: 20px;
     padding-left: 20px;
     max-width: 620px;
-    position:static;
+    position: static;
+  }
+
+  .header-menu {
+    display: none;
   }
 
   .header-buttons {
@@ -552,9 +539,9 @@ header a:hover {
   .icon {
     height: 24px;
   }
-  
+
   .main {
-    padding: 0 0 10px 0;
+    padding: 20px 0 10px 0;
   }
 
   h3 {
@@ -564,6 +551,10 @@ header a:hover {
   .portfolio-block h3 {
     padding-left: 0;
     text-align: center;
+  }
+
+  .portfolio-item {
+    padding: 10px;
   }
 }
 
@@ -578,7 +569,7 @@ header a:hover {
 
   .header-resume {
     padding: 0;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
   }
 
   .header-menu {
@@ -588,12 +579,11 @@ header a:hover {
 
   .about-block {
     padding: 0;
-    margin: 0 0 20px 0;
+    margin: 20px 0 20px 0;
   }
 
   .steak-block {
     padding: 0;
-    text-align: center;
     margin: 0 0 20px 0;
   }
 }
