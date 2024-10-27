@@ -1,3 +1,5 @@
+@import url(./normalize.css);
+
 html[data-theme='light'] {
   --main-background: #FEFFFF;
   --main-text-color: #17252A;
@@ -7,8 +9,7 @@ html[data-theme='light'] {
   --close-button-color: #17252A;
   --social-button-color: #DEF2F1;
   --invert: none;
-  --shadow: drop-shadow(0px 0px 15px #00fff24e);
-
+  --shadow: 0 0 20px var(--accent-color);
 }
 
 html[data-theme='dark'] {
@@ -20,7 +21,7 @@ html[data-theme='dark'] {
   --close-button-color: #eeebff;
   --social-button-color: #eeebff;
   --invert: invert();
-  --shadow: drop-shadow(0px 0px 15px #2dd4bf);
+  --shadow: 0 0 20px var(--accent-color);
 }
 
 html {
@@ -39,14 +40,14 @@ body {
 }
 
 body {
-  margin: 0;
+  position: relative;
   font-family: 'Inter', Arial, sans-serif;
+  background-color: var(--main-background);
+  color: var(--main-text-color);
   font-size: 16px;
   font-weight: 300;
   line-height: normal;
-  position: relative;
-  background: var(--main-background);
-  color: var(--main-text-color);
+  margin: 0;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -94,6 +95,8 @@ a {
   line-height: 1.7;
   text-decoration: none;
   color: var(--main-text-color);
+  transition: text-shadow 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 p {
@@ -139,13 +142,13 @@ li {
   cursor: pointer;
 }
 
-.theme.light {
-  content: url(/public/icons/sun.svg);
-}
-
 .theme.dark {
   content: url(/public/icons/moon.svg);
   filter: invert();
+}
+
+.theme.light {
+  content: url(/public/icons/sun.svg);
 }
 
 /*  ---- HEADER ----  */
@@ -177,13 +180,18 @@ li {
 
 header a {
   max-width: 200px;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
 }
 
 header a:hover {
   color: var(--accent-color);
-  filter: var(--shadow);
+}
+
+.header-text {
+  transition: 0.3s ease-in-out;
+}
+
+.header-text:hover {
+  text-shadow: var(--shadow);
 }
 
 .header-buttons {
@@ -200,20 +208,26 @@ header a:hover {
   border-radius: 55px;
   background: var(--bottom-background);
   border: none;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
   overflow: hidden;
   cursor: pointer;
   outline: none;
+  box-shadow: 0 0 0 transparent; 
 }
 
 .btn:hover {
   color: var(--accent-color);
-  filter: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
-.btn p:hover {
+.btn:hover>.btn-text {
+  transition: 0.3s ease-in-out;
   color: var(--accent-color);
-  filter: var(--shadow);
+}
+
+.btn:hover>a {
+  transition: 0.3s ease-in-out;
+  color: var(--accent-color);
 }
 
 .btn:before {
@@ -239,7 +253,7 @@ header a:hover {
 .icon {
   height: 30px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 .icon.telegram {
@@ -249,7 +263,6 @@ header a:hover {
 
 .icon.telegram:hover {
   content: url(/public/icons/telegrcolor.svg);
-
 }
 
 .icon.instagram {
@@ -266,8 +279,12 @@ header a:hover {
   filter: var(--invert);
 }
 
+.icon.github:hover {
+  content: url(/public/icons/githubcolor.svg);
+}
+
 .icon:hover {
-  filter: var(--shadow);
+  filter: none;
 }
 
 
@@ -294,11 +311,12 @@ header a:hover {
 
 .accent {
   color: var(--accent-color);
+  transition: 0.3s ease-in-out;
 }
 
 .accent:hover {
   color: var(--main-text-color);
-  filter: var(--shadow);
+  text-shadow: var(--shadow);  
 }
 
 /*  ---- STEAK ----  */
@@ -334,7 +352,7 @@ header a:hover {
 }
 
 .portfolio-item:hover {
-  box-shadow: 0px 0px 0px 0.5px var(--accent-color);
+  box-shadow: 0px 0px 0px 0.6px var(--accent-color);
 }
 
 .portfolio-item:hover>.portfolio-top {

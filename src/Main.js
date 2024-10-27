@@ -4,23 +4,23 @@ import Theme from './Thems';
 
 const Main = () => {
   const { theme, setTheme } = Theme();
-  const [isDarkTheme, setIsDarkTheme] = useState(() => {
+  const [isLightTheme, setIsLightTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
-    return savedTheme === 'dark';
+    return savedTheme === 'light';
   });
   const toggleTheme = () => {
-    if (isDarkTheme) {
-      lightTheme()
+    if (isLightTheme) {
+      darkTheme()
     } else {
-      darkTheme();
+      lightTheme();
     }
-    setIsDarkTheme(!isDarkTheme);
-  }
-  const lightTheme = () => {
-    setTheme('light');
+    setIsLightTheme(!isLightTheme);
   }
   const darkTheme = () => {
     setTheme('dark');
+  }
+  const lightTheme = () => {
+    setTheme('light');
   }
 
   const [showModal, setShowModal] = useState(false);
@@ -66,7 +66,7 @@ const Main = () => {
       <div className="theme-switch">
         <div className="switch" onClick={toggleTheme}>
           <div className={theme === 'dark' ? "theme dark" : "theme light"}
-            style={{ transform: isDarkTheme ? 'translateX(38px)' : 'translate(0px)' }}></div>
+            style={{ transform: isLightTheme ? 'translate(0px)' : 'translateX(38px)' }}></div>
         </div>
       </div>
       <div className="container">
@@ -82,15 +82,15 @@ const Main = () => {
               </div>
 
               <div className="header-menu">
-                <a onClick={upButton}>Обо мне</a>
-                <a onClick={(e) => toBlock(e.target.getAttribute('height'))} height="320">Технологический стек</a>
-                <a onClick={(e) => toBlock(e.target.getAttribute('height'))} height="490">Портфолио</a>
+                <a className="header-text" onClick={upButton}>Обо мне</a>
+                <a className="header-text" onClick={(e) => toBlock(e.target.getAttribute('height'))} height="320">Технологический стек</a>
+                <a className="header-text" onClick={(e) => toBlock(e.target.getAttribute('height'))} height="490">Портфолио</a>
               </div>
             </div>
 
             <div className="header-buttons">
-              <button onClick={handelOpenModal} className="btn"><p>Контакты</p></button>
-              
+              <button onClick={handelOpenModal} className="btn"><p className="btn-text">Контакты</p></button>
+
               <div className="header-icon">
                 <a href="https://github.com/GulnaraFedorova" target="_blank" className="icon github"></a>
                 <a href="https://t.me/gkhurmatova" target="_blank" className="icon telegram"></a>
