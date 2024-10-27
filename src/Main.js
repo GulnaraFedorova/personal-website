@@ -44,8 +44,8 @@ const Main = () => {
   const toBlock = (height) => {
     window.scrollTo({ top: height, left: 0, behavior: 'smooth' })
   };
-
-  const PDF_FILE_URL = 'http://https:/gulnarafedorova.vercel.app/GulnaraFedorova.pdf'
+  
+  const PDF_FILE_URL = 'https:/gulnarafedorova.vercel.app/GulnaraFedorova.pdf'
   const downloadFileAtURL = (url) => {
     fetch(url)
       .then((response) => response.blob())
