@@ -116,10 +116,10 @@ const Main = () => {
               <button onClick={handelOpenModal} className="btn"><p className="btn-text">{t('contacts')}</p></button>
 
               <div className="header-icon">
-                <a href="https://www.linkedin.com/in/gulnarafedorova/" target="_blank" className="icon linkedin"></a>
-                <a href="https://github.com/GulnaraFedorova" target="_blank" className="icon github"></a>
-                <a href="https://t.me/gkhurmatova" target="_blank" className="icon telegram"></a>
-                <a href="https://www.instagram.com/khurmatova/" target="_blank" className="icon instagram"></a>
+                <a href="https://www.linkedin.com/in/gulnarafedorova/" target="_blank" className="icon icon-linkedin"></a>
+                <a href="https://github.com/GulnaraFedorova" target="_blank" className="icon icon-github"></a>
+                <a href="https://t.me/gkhurmatova" target="_blank" className="icon icon-telegram"></a>
+                <a href="https://www.instagram.com/khurmatova/" target="_blank" className="icon icon-instagram"></a>
               </div>
             </div>
           </div>

@@ -266,46 +266,45 @@ header a:hover {
   transition: 0.1s;
 }
 
-.icon.telegram {
-  content: url(/public/icons/telegram.svg);
-  filter: var(--invert);
-}
-
-.icon.telegram:hover {
-  content: url(/public/icons/telegrcolor.svg);
-}
-
-.icon.instagram {
-  content: url(/public/icons/instagram.svg);
-  filter: var(--invert);
-}
-
-.icon.instagram:hover {
-  content: url(/public/icons/instagramcolor.svg);
-}
-
-.icon.github {
-  content: url(/public/icons/github.svg);
-  filter: var(--invert);
-}
-
-.icon.github:hover {
-  content: url(/public/icons/githubcolor.svg);
-}
-
-.icon.linkedin {
-  content: url(/public/icons/linkedin.svg);
-  filter: var(--invert);
-}
-
-.icon.linkedin:hover {
-  content: url(/public/icons/linkedincolor.svg);
-}
-
 .icon:hover {
   filter: none;
 }
 
+.icon-telegram {
+  content: url(/public/icons/telegram.svg);
+  filter: var(--invert);
+}
+
+.icon-telegram:hover {
+  content: url(/public/icons/telegrcolor.svg);
+}
+
+.icon-instagram {
+  content: url(/public/icons/instagram.svg);
+  filter: var(--invert);
+}
+
+.icon-instagram:hover {
+  content: url(/public/icons/instagramcolor.svg);
+}
+
+.icon-github {
+  content: url(/public/icons/github.svg);
+  filter: var(--invert);
+}
+
+.icon-github:hover {
+  content: url(/public/icons/githubcolor.svg);
+}
+
+.icon-linkedin {
+  content: url(/public/icons/linkedin.svg);
+  filter: var(--invert);
+}
+
+.icon-linkedin:hover {
+  content: url(/public/icons/linkedincolor.svg);
+}
 
 /*  ---- MAIN BLOCK ----  */
 
