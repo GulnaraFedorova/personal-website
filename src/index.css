@@ -257,13 +257,11 @@ header a:hover {
 .header-icon {
   display: flex;
   gap: 20px;
-  padding: 0 10px;
 }
 
 .icon {
   height: 30px;
   cursor: pointer;
-  transition: 0.1s;
 }
 
 .icon:hover {
