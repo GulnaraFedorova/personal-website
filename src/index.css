@@ -256,7 +256,8 @@ header a:hover {
 
 .header-icon {
   display: flex;
-  gap: 15px
+  gap: 20px;
+  padding: 0 10px;
 }
 
 .icon {
@@ -290,6 +291,15 @@ header a:hover {
 
 .icon.github:hover {
   content: url(/public/icons/githubcolor.svg);
+}
+
+.icon.linkedin {
+  content: url(/public/icons/linkedin.svg);
+  filter: var(--invert);
+}
+
+.icon.linkedin:hover {
+  content: url(/public/icons/linkedincolor.svg);
 }
 
 .icon:hover {
