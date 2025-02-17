@@ -125,6 +125,7 @@ li {
 }
 
 .lang-switch {
+  all: unset;
   width: 74px;
   height: 30px;
   display: flex;
@@ -185,17 +186,21 @@ li {
   color: var(--main-text-color);
   margin: 100px 0;
   gap: 20px;
-}
-
-header a {
   max-width: 200px;
 }
 
-header a:hover {
+.header-menu :hover {
   color: var(--accent-color);
 }
 
 .header-text {
+  all: unset;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  text-decoration: none;
+  color: var(--main-text-color);
+  cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 
@@ -222,6 +227,7 @@ header a:hover {
   cursor: pointer;
   outline: none;
   box-shadow: 0 0 0 transparent; 
+  color: var(--main-text-color);
 }
 
 .btn:hover {

@@ -11,6 +11,8 @@
     "completed": "Thus, I completed",
     "course": " the 'Web Developer' course ",
     "at Yandex Practicum": "at Yandex Practicum and continue to improve.",
+    "multiplication game about": "An interactive application for learning multiplication, designed for elementary school students. The app dynamically generates multiplication problems, provides visual hints in the form of cubes, and correctly handles both correct and incorrect answers, offering clear feedback to the user. ",
+    "blog app about": "A full-fledged web application for blogging that allows users to create, edit, and delete posts, as well as upload images and videos. The project includes both the client-side and server-side components, ensuring a complete content management workflow.",
     "personal website about": "The portfolio website is created for personal use. The design is minimalist, focusing on easy navigation and responsive layout for various devices.",
     "tea shop about": "A simple web application for a tea shop where users can view and purchase various types of tea.",
     "registration app about": "The application allows users to register and add, edit, and delete records in a personal account. It contains a registration form and a page for working with user records.",
