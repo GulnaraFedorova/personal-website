@@ -199,7 +199,7 @@ const Main = () => {
                 href={
                   language === "en"
                     ? '/GF_Certificate_"Web-Development".pdf'
-                    : '/GF_Диплом_«Веб-разработчик».pdf'
+                    : '/GF_Диплом_"Веб-разработчик".pdf'
                 }
                 target="_blank"
                 rel="noopener noreferrer"
@@ -445,7 +445,6 @@ const Main = () => {
                 </a>
               </li>
               <li>
-                {/* Элемент без ссылки меняем на div */}
                 <div className="portfolio-item">
                   <div className="portfolio-top">
                     <h4>Movies explorer</h4>
