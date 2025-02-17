@@ -198,8 +198,8 @@ const Main = () => {
               <a
                 href={
                   language === "en"
-                    ? '/GF_Certificate_"Web-Development".pdf'
-                    : '/GF_Диплом_"Веб-разработчик".pdf'
+                    ? '/GF_Certificate_"Web-Development"_EN.pdf'
+                    : '/GF_Certificate_"Web-Development"_RU.pdf'
                 }
                 target="_blank"
                 rel="noopener noreferrer"
